@@ -36,3 +36,21 @@ echo "ARRAY : ${array[@]}"
 echo "COunt" $counter
 
 
+#Sort in Decending Order
+
+ for (( i=0; i<counter-1; i++ ));
+do
+
+   for (( j=0; j<counter-i-1; j++ ));
+do
+      if (( array[j] < array[j+1] )); then
+         tmp=${array[j]}
+         array[j]=${array[j+1]}
+         array[j+1]=$tmp
+      fi
+   done
+
+done
+
+echo "sorted Array in Decending order: " ${array[@]}
+
