@@ -23,3 +23,16 @@ store[uc4]=$(((c+a)/b))
 store[uc5]=$(((a/b)+c))
 
 echo "Dictionary : ${store[@]}"
+
+#Storing Dictionary to Array
+
+counter=0
+array[counter++]=${store[uc2]}
+array[counter++]=${store[uc3]}
+array[counter++]=${store[uc4]}
+array[counter++]=${store[uc5]}
+
+echo "ARRAY : ${array[@]}"
+echo "COunt" $counter
+
+
