@@ -8,3 +8,5 @@ read -p "Enter C :" c
 echo "$(((a+b)*c))"
 
 echo "$(((a*b)+c))"
+
+echo "$(((c+a)/b))"
