@@ -12,3 +12,14 @@ echo "$(((a*b)+c))"
 echo "$(((c+a)/b))"
 
 echo "$(((a/b)+c))"
+
+
+#Declaring Dictionary
+
+declare -A store
+store[uc2]=$(((a+b)*c))
+store[uc3]=$(((a*b)+c))
+store[uc4]=$(((c+a)/b))
+store[uc5]=$(((a/b)+c))
+
+echo "Dictionary : ${store[@]}"
